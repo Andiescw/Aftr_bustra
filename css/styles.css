@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+:root {
+    font-size: 14px;
+  }
+
+  /* --------- INDEX --------- */
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .main_img {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  
+  }
+  
+  .img-central{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -5;
+    opacity: 80%;
+    padding: 1rem;
+      
+      }
+  
+    .rectangle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      padding: 1rem;
+        
+      border-radius: 15px;
+      background-color: black;
+      opacity: 85%;
+      width: 38vw;
+      height: 50vh;
+      position: absolute;
+      z-index: 1;
+  
+      } 
+      
+    .main-logo {
+      height: 23vh;
+      width: auto;
+      z-index: 3;
+      opacity: 100%;
+                 
+      }
+  
+  .welcome {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+      z-index: 5;
+      opacity: 100%;
+                 
+      text-align: center;
+  }
+  
+  .slogan {
+      font-size: 1.25rem;
+      font-weight: 400;
+      font-style: italic;
+      color: white;
+      z-index: 2; 
+      text-align: center;
+      opacity: 100%;
+  }
+
+  /* --------- GALERIA --------- */
+
+.galery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 40vh;
+    padding: 2rem;
+    grid-gap: 2rem;
+  }
+  
+  .img_galery {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  
+  /* COMIENZA MEDIA QUERIES CELULARES */
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  
+    /* NAVEGACION */
+      .nav_text {
+      font-size: 1rem;
+      gap: 0 1.25rem;
+    }
+  
+    /* INDEX*/
+    .main_img {
+      padding: 0 .5rem;
+    }
+  
+    .rectangle {
+      padding: .6rem;
+      width: 70vw;
+      height: 40vh;
+    }
+  
+    .main-logo {
+      height: 15vh;
+    }
+  
+    .welcome {
+      font-size: 2rem;
+    }
+  
+    .slogan {
+      font-size: 1rem;
+    }
+   
+
+  
+  /* ------ GALERIA ------ */
+  .galery-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 30vh;
+  }
+  
+    
+  } /*TERMINAN MEDIA QUERIES CELULAR*/
+  
+
+  
