@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
-    crossorigin="anonymous">
-
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <!--------- BOOSTRAP LINK CSS --------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
+
+    <!--------- CSS / SASS LINK --------->
+    <link rel="stylesheet" href="/css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+    <!--------- SEO --------->
+
     <title>The Coffee Shop</title>
+
 </head>
 <body>
     <header>
-      <!--NAVEGACION-->
+      <!--------- NAVEGACION --------->
       <nav class="navbar navbar-expand-lg navbar-dark bg-success fs-5 fw-semibold">
         <div class="container-fluid">
           <a class="navbar-brand m-3" href="../index.html">
@@ -32,7 +36,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="./vistas/menu.html">Menu</a>
+                <a class="nav-link" href="./vistas/menu.html">Menú</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./vistas/nosotros.html">Nosotros</a>
@@ -49,51 +53,18 @@
       </nav>
     </header>
 
-    <!--IMAGEN CENTRAL
-      <main>
-      <div class="content container expand-sm">
-
-        <div class="rectangle">
-          
-          <img src="./assets/img/LogoTCS.png" class="main-logo">
-          
-          <h1 class="welcome diplay-1 fw-bold"> The Coffee Shop </h1>
-        
-          <p class="slogan fs-3 fw-semibold"> ¿Listo para despertar? </p>
-        </div>
-      </div>
-
-      <div class="main_img">
-        <img src="./assets/img/main.jpg" class="img-central img-fluid">
-      </div>
-    </main> -->
-
     
-    <main>
-      <div class="content">
-          <div class="rectangle">
-
-             <div>
-                 <img src="./assets/img/LogoTCS.png" class="main-logo">
-             </div>
-
-              <h1 class="welcome">
-                  The Coffee Shop
-              </h1>
-              
-              <p class="slogan">
-                  ¿Listo para despertar?
-              </p>
-          </div>
-  
-          <div class="main_img">
-              <img src=".//assets/img/main.jpg" class="img-central" alt="Main image"
-          title="main">
-          </div>
+    <main class="container container-sm">
+      <div class="bg-image img-fluid">
+            <div class="box"> 
+              <img class="logo" src="./assets/img/LogoTCS.png">
+              <h1 class="color-overlay text-center fw-bold text-white">The Coffee Shop</h1>
+              <p class="color-overlay fst-italic text-center text-white">¿Listo para despertar?</p>
+            </div>
       </div>
   </main>            
     
-    <!--FOOTER-->
+    <!--------- FOOTER --------->
     <div class="container-fluid bg-black p-3">
       <footer class="d-flex flex-wrap justify-content-center align-items-center p-3 border-top">
         <div class="col-m-4 d-flex align-items-center">
@@ -104,10 +75,11 @@
       </footer>
     </div>
 
-    
+    <!--------- BOOSTRAP LINK JAVASCRIPT --------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
     crossorigin="anonymous"></script>
   
 </body>
 </html>
+
