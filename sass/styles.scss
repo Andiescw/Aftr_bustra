@@ -64,9 +64,19 @@ html {
     }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .box {
-        width: 50vw;
-        height: 60vh;
+        height: 50vh;
+        width: 60vw;
+    }
+    .logo {
+        height: 12vh;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: .75rem;
     }
 }
