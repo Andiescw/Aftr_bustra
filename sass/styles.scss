@@ -1,5 +1,17 @@
-$color1: black;
-$color2: darkolivegreen;
+$black: black;
+$olive: darkolivegreen;
+
+$breakpoints: (
+    sm : 500px,
+    md : 768px,
+    lg : 1024px
+);
+
+@mixin media($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
 
 * {
     margin: 0;
@@ -12,6 +24,13 @@ html {
     background-color: black;
 }
 
+/* ------------ NAVEGACION ------------ */
+nav {
+    background-color: $olive;
+}
+
+
+/* ------------ INDEX CONTENT ------------ */
 .container {
     display: flex;
     justify-content: center;
@@ -22,12 +41,10 @@ html {
         background-size: cover;
         min-height: 100vh;
         min-width: 100vw;
-        color: $color1;
-        text-shadow: 2px 2px 2px $color1;
-        display: flex;
         position: relative;
-        justify-content: center;
-        align-items: center;
+        color: $black;
+        text-shadow: 2px 2px 2px $black;
+        @extend .container;
 
 
         > * {
@@ -41,46 +58,89 @@ html {
         .box {
           padding: 1rem;
           flex-direction: column;
-                            
           border-radius: 15px;
-          background-color: $color1;
+          background-color: $black;
           opacity: 85%;
-          width: 38vw;
+          width: 35vw;
           height: 50vh;
-          
+
+          @include media(sm){
+            width: 60vw;
+            height: 40vh; }
+          @include media(lg){
+            width: 60vw;
+            height: 50vh; }
+
             .logo {
                 height: 20vh;
+
+                @include media(sm){
+                    height: 9vh; }
+                @include media(md){
+                    height: 13vh; }
+                @include media(lg){
+                    height: 18vh; }
             }
         
             h1{
-                font-size: 3rem;
+                font-size: 3.5rem;
+
+                @include media(sm){
+                    font-size: 1.75rem; }
+                @include media(md){
+                    font-size: 2.75rem; }
             }
         
             p {
-                font-size: 1.25rem;
+                font-size: 1.5rem;
+
+                @include media(sm){
+                    font-size: .5rem; }
+                @include media(md){
+                    font-size: 1rem; }
             }
-        }
-        
+
+            }
+         }   
     }
-}
 
-@media (min-width: 30em) and (max-width: 50em) {
-    .container {
-        .bg-image {
-            .box {
-                height: 50vh;
-                width: 60vw;
-            }
-            .logo {
-                height: 12vh;
-            }
-            h1 {
-                font-size: 2rem;
-            }
+    /* ------------ TITULO DE CADA PAGINA ------------ */
+    .titulo {
+        color: $olive;
+        font-weight: 800;
+        font-size: 3rem;
+        position: relative;
+        display:flex;
+        justify-content:center;
+        align-content: center;
+        margin-top: .4rem;
+        margin-bottom: .4rem;
+        padding: .5rem 0;
+    }
 
-            p {
-                font-size: .75rem;
-            }
-        }
+    /* ------------ GALERIA ------------ */
+    .galery-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 40vh;
+        padding: 2rem;
+        grid-gap: 2rem;
+        @include media(lg){
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 30vh; }
+        @include media(sm){
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: 50vh; }
+        .img_galery {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+      }
+        
+/* ------------ FOOTER ------------ */
+footer {
+    img.logo {
+        height: 5vh;
     }
 }
