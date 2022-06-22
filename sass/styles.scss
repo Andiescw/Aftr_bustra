@@ -118,6 +118,15 @@ nav {
         padding: .5rem 0;
     }
 
+    /* ------------ TITULO DE CADA PAGINA ------------ */
+    .containerNos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 80vw;
+    }
+
     /* ------------ GALERIA ------------ */
     .galery-container {
         display: grid;
@@ -155,6 +164,41 @@ nav {
         }
     }
 }
+
+ /* ------------ FORMULARIO DE CONTACTO ------------ */
+ main.contacto {
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    @include media(md){
+        display:flex;
+        flex-direction: column;
+        margin: 2rem; 
+        width: 90vw;
+    }
+    section.container-md {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+        margin: 2rem;
+        @include media(md){
+            margin: 1rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        form.row {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+    }
+}
+ 
 
         
 /* ------------ FOOTER ------------ */

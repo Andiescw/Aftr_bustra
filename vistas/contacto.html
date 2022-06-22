@@ -50,6 +50,79 @@
     </nav>
   </header>
 
+  <!--------- FORMULARIO DE CONTACTO --------->
+  <div>
+    <h1 class="titulo">Contacto</h1>
+    <h2 class="text-center">Dejanos tu comentario, sugerencia, queja, o chismesito aqui:</h2>
+</div>
+<main class="contacto">
+  <section class="container-md"> <!-- Contenedor Izquierdo-->
+    <form class="row">
+      <div class="col">
+      <div class="my-4">
+        <label for="FormControlInput1" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="FormControlInput1" placeholder="Aqui va tu Nombre">
+      </div> <!-- fin nombre -->
+
+      <div class="my-4">
+        <label for="FormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
+      </div> <!-- fin email -->
+
+      <div class="my-4">
+        <label for="FormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="5"></textarea>
+      </div> <!-- fin mensaje-->
+    </div>
+    </form> 
+  </section> 
+
+  <section class="container-md"> <!-- Contenedor Derecho-->
+    <form class="row">
+      <div class="col"> 
+
+        <div class="my-4"><!--Comienzo genero-->
+        <legend>Género:</legend><!-- CHECKBOX -->
+        <div class="form-check form-check-inlined">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Femenino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio1">Masculino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <label class="form-check-label" for="inlineRadio1">Que vintage con eso de género</label>
+        </div>
+      </div><!--Fin de Genero-->
+
+      <div class="Select-menu my-4"> <!--Ubicacion-->
+        <legend>¿En qué ubicación nos visitas?</legend>
+        <select class="form-select" aria-label="Default select">
+          <option selected>Elige una opción</option>
+          <option value="1">CDMX</option>
+          <option value="2">GDL</option>
+          <option value="3">MTY</option>
+        </select>
+      </div><!--fin menu Ubicacion-->
+
+        <div class="my-4">
+          <legend>¿Te gustaría recibir más información sobre nosotros?</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+            <label class="form-check-label" for="inlineRadio1">Jalo!</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+            <label class="form-check-label" for="inlineRadio2">Safo!</label>
+          </div>
+        </div> <!--fin mas info-->
+        <button type="button submit" class="btn btn-success">Enviar</button>
+      </div> 
+    </form> 
+  </section> 
+</main>
 
   <!--------- FOOTER --------->
   <div class="container-fluid bg-black p-3">
