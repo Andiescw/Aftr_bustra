@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--------- AOS ANIMATION LINK CSS --------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--------- BOOSTRAP LINK CSS --------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
@@ -13,10 +16,10 @@
     <!--------- CSS / SASS LINK --------->
     <link rel="stylesheet" href="../css/styles.css">
 
-    <!--------- POPPINS FONT --------->
+    <!--------- MONTSERRAT FONT --------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 
     <!--------- SEO --------->
     <meta name="keywords" content="COFFEE SHOP, COFFEE, CAFÉ, CAFETERÍA, BEBIDAS">
@@ -50,27 +53,37 @@
     </nav>
   </header>
 
-  <main>
-    <div class="containerNos">
+  <main class="us">
+    <div class="Nosotros">
+    <div class="container">
+      <div class="row">
+        <!--<div class="col">-->
+
     <div><h1 class="titulo">Nosotros</h1></div>
+
+    <div class="col container-left">
+    <figure class="figure">
+        <img src="../assets/img/handsCoffeeBeans1.jpg" class="figure-img img-fluid rounded" width="600" data-aos="fade-down" role="img">
+        <rect width="100%" height="90%"></rect>
+    </figure>
+  </div>
     
-    <div class="image">
-        <img src="../assets/img/handsCoffeeBeans.jpg" class="img-nos">
-    </div>
-    
-    <div class="nos-container">
-    <section class="nos">
-        <h2 class="conocenos text-center">Conoce un poco mas sobre nosotros...</h2>
-        <p class="parrafo_nos text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere obcaecati vero facilis reiciendis corrupti 
-        itaque rem voluptatem libero? Dolores itaque quasi tenetur excepturi dignissimos quisquam, soluta officiis repellat 
-        asperiores. Necessitatibus at totam architecto. Vel, totam in? Odio quasi voluptatum vel totam, dolores mollitia 
-        perspiciatis ut tempore, nihil repudiandae incidunt suscipit placeat tempora maxime quo perferendis vero sequi expedita 
-        ex. Ut, laborum facilis sunt suscipit et alias obcaecati, quae aspernatur voluptatem ullam sed eum tenetur quod recusandae 
-        error totam tempora distinctio aut? Facilis natus dolore sequi voluptas, odio aspernatur quis.
-        Sit error reprehenderit molestiae necessitatibus optio ex fuga esse quod reiciendis nemo! Minima fugit, cupiditate itaque, 
-        fugiat expedita ad enim numquam illo reprehenderit voluptates repellendus nam porro laudantium, tempore amet.</p>
+    <div class="col container-right">
+    <section>
+        <h2 class="text-center text-md-start">Conoce un poco mas sobre nosotros...</h2>
+        <p class="text-center text-md-start">En The Coffee Shop somos una empresa 100% mexicana que busca ofrecer a sus comensales lo mejor de nuestras raíces 
+          en cada taza de café. 
+          <br>Podrás descubrir en cualquiera de nuestas 3 sucursales el sabor y aroma de nuestros campos.
+          <br>Apoyamos a la industria mexicana de cafetaleros, únicamente servimos café mexicano de nuestros caficultores en zonas de Chiapas,
+          Oaxaca, Puebla y Guerrero.
+          <br>Te recordamos que todas nuestras sucursales son Pet Friendly, así que no dudes en traer a tu mascota también, le ofreceremos una galleta de cortesía con tu compra.
+        </p>
     </section>
   </div><!--nos container-->
+  
+<!--</div>col-->
+</div><!--container-->
+</div><!--row-->
 </div><!--container-->
 </main>
 
@@ -89,5 +102,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
   crossorigin="anonymous"></script>
+
+  <!--------- AOS ANIMATION LINK JAVASCRIPT --------->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
