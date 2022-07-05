@@ -21,6 +21,7 @@ $breakpoints: (
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
 /* ------------ NAVEGACION ------------ */
@@ -34,75 +35,66 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 0;
 
     .bg-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-width: 100%;
         background-image: url('../assets/img/main.jpg');
         background-size: cover;
-        min-height: 100vh;
-        min-width: 100vw;
         position: relative;
-        color: $black;
+        
+        filter: brightness(40%);
+            }
+
+    .content-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        flex-direction: column;
         text-shadow: 2px 2px 2px $black;
-        @extend .container;
 
-
-        > * {
-            display: flex;
-            font-family: 'Montserrat', sans-serif;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            }
-    
-        .box {
-          padding: 1rem;
-          flex-direction: column;
-          border-radius: 15px;
-          background-color: $black;
-          opacity: 85%;
-          width: 35vw;
-          height: 50vh;
-
-          @include media(sm){
-            width: 60vw;
-            height: 40vh; }
-          @include media(lg){
-            width: 60vw;
-            height: 50vh; }
-
-            .logo {
-                height: 20vh;
-
-                @include media(sm){
-                    height: 9vh; }
-                @include media(md){
-                    height: 13vh; }
-                @include media(lg){
-                    height: 18vh; }
-            }
+        .logo {
+            height: 30vh;
+            filter: brightness(120%);
         
-            h1{
-                font-size: 3.5rem;
-                font-weight:bold;
-
-                @include media(sm){
-                    font-size: 1.75rem; }
-                @include media(md){
-                    font-size: 2.75rem; }
-            }
+            @include media(sm){
+                height: 17vh; }
+            @include media(md){
+                height: 22vh; }
+            @include media(lg){
+                height: 28vh; }
+                    }
+                
+        h1{
+            font-size: 4rem;
+            font-weight:bold;
+            padding-top: .5rem;
         
-            p {
-                font-size: 1.5rem;
-
-                @include media(sm){
-                    font-size: .5rem; }
-                @include media(md){
-                    font-size: 1rem; }
-            }
-
-            }
-         }   
-    }
+            @include media(sm){
+                font-size: 1.75rem; }
+            @include media(md){
+                font-size: 3rem; }
+                    }
+                
+        p {
+            font-size: 2rem;
+        
+            @include media(sm){
+                font-size: 1rem; }
+            @include media(md){
+                font-size: 1.75rem; }
+                    }
+        } 
+    }   
+   
 
     /* ------------ TITULO DE CADA PAGINA ------------ */
     .titulo {
@@ -140,11 +132,28 @@ nav {
         @include media(sm){
             grid-template-columns: repeat(1, 1fr);
             grid-auto-rows: 50vh; }
-        .img_galery {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+
+        .img_item {
+            position: relative;
+
+            .img_gallery {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              
+              .img_title {
+                position: absolute;
+                bottom: 0;
+                color: white;
+                background-color: rgba(85, 107, 47, 30%);
+                width: 100%;
+                margin: 0;
+                padding: .5rem;
+                backdrop-filter: blur(6px);
+              }
+        }
+
       }
 
 /* ------------ MENU ------------ */
@@ -156,7 +165,7 @@ nav {
     .container {
         display: inline-flex;
         flex-flow: row wrap;
-        margin: 2rem;
+        padding: 1rem;
         @include media(sm){
             display:flex;
             flex-direction: column;
@@ -201,9 +210,20 @@ nav {
         }
     }
 
-
-
  /* ------------ FORMULARIO DE CONTACTO ------------ */
+
+ div.contact {
+    margin: 1rem;
+    padding: 1rem;
+    .text-center{
+        margin: 1rem;
+        padding: 1rem;
+        @include media(sm){
+            font-size: 1rem;
+        }
+    }
+ }
+
  main.contacto {
     display:flex;
     justify-content: center;
@@ -235,9 +255,7 @@ nav {
         }
     }
 }
- 
-
-        
+         
 /* ------------ FOOTER ------------ */
 footer {
     img.logo {

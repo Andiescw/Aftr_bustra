@@ -54,12 +54,12 @@
   </header>
 
   <!--------- FORMULARIO DE CONTACTO --------->
-  <div>
+  <div class="contact">
     <h1 class="titulo">Contacto</h1>
-    <h2 class="text-center">Déjanos tu comentario, sugerencia, queja, o chismesito aqui:</h2>
+    <h2 class="text-center text-sm-center">Déjanos tu comentario, sugerencia, queja, o chismesito aqui:</h2>
   </div>
 <main class="contacto">
-  <section class="container-md" data-aos="fade-right"> <!-- Contenedor Izquierdo-->
+  <section class="container-md"> <!-- Contenedor Izquierdo-->
     <form class="row">
       <div class="col">
       <div class="my-4">
@@ -80,11 +80,11 @@
     </form> 
   </section> 
 
-  <section class="container-md" data-aos="fade-left"> <!-- Contenedor Derecho-->
+  <section class="container-md"> <!-- Contenedor Derecho-->
     <form class="row">
       <div class="col"> 
 
-        <div class="my-4"><!--Comienzo genero-->
+        <form class="my-4"><!--Comienzo genero-->
         <legend>Género:</legend><!-- CHECKBOX -->
         <div class="form-check form-check-inlined">
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -98,7 +98,7 @@
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
           <label class="form-check-label" for="inlineRadio1">Que vintage con eso de género</label>
         </div>
-      </div><!--Fin de Genero-->
+      </form><!--Fin de Genero-->
 
       <div class="Select-menu my-4"> <!--Ubicacion-->
         <legend>¿En qué ubicación nos visitas?</legend>
@@ -110,17 +110,17 @@
         </select>
       </div><!--fin menu Ubicacion-->
 
-        <div class="my-4">
+        <form class="my-4">
           <legend>¿Te gustaría recibir más información sobre nosotros?</legend>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">Jalo!</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">Safo!</label>
           </div>
-        </div> <!--fin mas info-->
+        </form> <!--fin mas info-->
         <button type="button submit" class="btn btn-success">Enviar</button>
       </div> 
     </form> 
