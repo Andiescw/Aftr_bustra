@@ -65,33 +65,25 @@ nav {
             height: 30vh;
             filter: brightness(120%);
         
-            @include media(sm){
-                height: 17vh; }
             @include media(md){
-                height: 22vh; }
+                height: 20vh; }
             @include media(lg){
                 height: 28vh; }
-                    }
+        }
                 
-        h1{
+        h1 {
             font-size: 4rem;
             font-weight:bold;
             padding-top: .5rem;
-        
-            @include media(sm){
-                font-size: 1.75rem; }
             @include media(md){
-                font-size: 3rem; }
-                    }
+                font-size: 2.75rem;}
+        }
                 
         p {
             font-size: 2rem;
-        
-            @include media(sm){
-                font-size: 1rem; }
             @include media(md){
-                font-size: 1.75rem; }
-                    }
+                font-size: 1.5rem; }
+           }
         } 
     }   
    
@@ -110,13 +102,45 @@ nav {
         padding: .5rem 0;
     }
 
-    /* ------------ TITULO DE CADA PAGINA ------------ */
-    .containerNos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        width: 80vw;
+    /* ------------ NOSOTROS ------------ */
+    main.us {
+        .nosotros {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            .container {
+                min-height: 0vh;
+                padding: 1rem;
+
+                @include media (md){
+                    padding-right: 2rem;
+                    padding-left: 2rem;
+                }
+
+                @include media (sm){
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
+                }
+
+                .figure{
+                    @include media (lg){
+                        height: 30rem;
+                    }
+                    @include media (sm){
+                        height: 22rem;
+                    }
+                    .figure-img {
+                        @include media (md) {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        }
+                    }
+                }
+                
+            }
+        }
     }
 
     /* ------------ GALERIA ------------ */
@@ -213,11 +237,8 @@ nav {
  /* ------------ FORMULARIO DE CONTACTO ------------ */
 
  div.contact {
-    margin: 1rem;
     padding: 1rem;
     .text-center{
-        margin: 1rem;
-        padding: 1rem;
         @include media(sm){
             font-size: 1rem;
         }
